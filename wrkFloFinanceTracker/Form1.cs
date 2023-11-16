@@ -14,9 +14,9 @@ using System.Windows.Forms;
 //Laila
 namespace wrkFloFinanceTracker
 {
-    public partial class Form1 : Form
+    public partial class FinanceTracker : Form
     {
-        public Form1()
+        public FinanceTracker()
         {
             InitializeComponent();
         }

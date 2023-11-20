@@ -79,6 +79,11 @@ namespace WrkFloAGENDA
         {
 
         }
+
+        private void viewAllEvents_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

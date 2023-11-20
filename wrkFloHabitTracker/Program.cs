@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace wrkFloFinanceTracker
+namespace wrkFloHabitTracker
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace wrkFloFinanceTracker
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FinanceTracker());
+            Application.Run(new Form1());
         }
     }
 }

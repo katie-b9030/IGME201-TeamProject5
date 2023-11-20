@@ -8,18 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-//Katiya
-//Katie
-//Brevin
-//Laila
-// Ethan 
-namespace wrkFloFinanceTracker
+namespace wrkFloHabitTracker
 {
-    public partial class FinanceTracker : Form
+    public partial class Form1 : Form
     {
-        public FinanceTracker()
+        public Form1()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

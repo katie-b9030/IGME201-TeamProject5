@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8C8D0CAF-4B68-4992-A20F-2E0BE232D346}</ProjectGuid>
+    <ProjectGuid>{BB8A90AA-AE24-4C97-B32C-32431ED9E428}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>wrkFloFinanceTracker</RootNamespace>
-    <AssemblyName>wrkFloFinanceTracker</AssemblyName>
+    <RootNamespace>wrkFloHabitTracker</RootNamespace>
+    <AssemblyName>wrkFloHabitTracker</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -33,6 +33,7 @@
             this.agendaText = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
+            this.splitter1 = new System.Windows.Forms.Splitter();
             this.yearRadio = new System.Windows.Forms.RadioButton();
             this.monthRadio = new System.Windows.Forms.RadioButton();
             this.weekRadio = new System.Windows.Forms.RadioButton();
@@ -78,16 +79,18 @@
             // agendaText
             // 
             this.agendaText.AutoSize = true;
-            this.agendaText.Font = new System.Drawing.Font("Tw Cen MT Condensed", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.agendaText.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.agendaText.Location = new System.Drawing.Point(246, 22);
+            this.agendaText.Font = new System.Drawing.Font("Tw Cen MT", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agendaText.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.agendaText.Location = new System.Drawing.Point(464, 6);
             this.agendaText.Name = "agendaText";
-            this.agendaText.Size = new System.Drawing.Size(91, 39);
+            this.agendaText.Size = new System.Drawing.Size(116, 39);
             this.agendaText.TabIndex = 7;
             this.agendaText.Text = "Agenda";
             // 
             // splitContainer1
             // 
+            this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.splitContainer1.ForeColor = System.Drawing.Color.RoyalBlue;
             this.splitContainer1.Location = new System.Drawing.Point(3, 1);
             this.splitContainer1.Name = "splitContainer1";
             // 
@@ -97,6 +100,8 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.agendaText);
+            this.splitContainer1.Panel2.Controls.Add(this.splitter1);
             this.splitContainer1.Panel2.Controls.Add(this.yearRadio);
             this.splitContainer1.Panel2.Controls.Add(this.monthRadio);
             this.splitContainer1.Panel2.Controls.Add(this.weekRadio);
@@ -108,7 +113,6 @@
             this.splitContainer1.Panel2.Controls.Add(this.decreaseArrow);
             this.splitContainer1.Panel2.Controls.Add(this.increaseArrow);
             this.splitContainer1.Panel2.Controls.Add(this.agendaCalendar);
-            this.splitContainer1.Panel2.Controls.Add(this.agendaText);
             this.splitContainer1.Panel2.Controls.Add(this.plusButton);
             this.splitContainer1.Size = new System.Drawing.Size(794, 446);
             this.splitContainer1.SplitterDistance = 199;
@@ -122,6 +126,17 @@
             this.label1.Size = new System.Drawing.Size(102, 16);
             this.label1.TabIndex = 16;
             this.label1.Text = "Nav will go here";
+            // 
+            // splitter1
+            // 
+            this.splitter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.splitter1.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.splitter1.Location = new System.Drawing.Point(0, 0);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.splitter1.Size = new System.Drawing.Size(14, 442);
+            this.splitter1.TabIndex = 24;
+            this.splitter1.TabStop = false;
             // 
             // yearRadio
             // 
@@ -267,7 +282,7 @@
             // 
             // increaseArrow
             // 
-            this.increaseArrow.Location = new System.Drawing.Point(198, 198);
+            this.increaseArrow.Location = new System.Drawing.Point(213, 198);
             this.increaseArrow.Name = "increaseArrow";
             this.increaseArrow.Size = new System.Drawing.Size(75, 23);
             this.increaseArrow.TabIndex = 14;
@@ -316,6 +331,7 @@
         private System.Windows.Forms.RadioButton monthRadio;
         private System.Windows.Forms.RadioButton weekRadio;
         private System.Windows.Forms.RadioButton dayRadio;
+        private System.Windows.Forms.Splitter splitter1;
     }
 }
 

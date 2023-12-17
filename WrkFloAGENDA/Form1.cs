@@ -41,6 +41,9 @@ namespace WrkFloAGENDA
             this.event3.CheckedChanged += new EventHandler(this.Event3__CheckedChanged);
 
             this.agendaCalendar.DateSelected += new DateRangeEventHandler(this.AgendaCalendar__DateSelected);
+            splitContainer1.BorderStyle = BorderStyle.Fixed3D;
+            
+           
 
 
             // set starting state
@@ -52,7 +55,7 @@ namespace WrkFloAGENDA
             event3.Visible = false;
 
             // set starting colors
-            this.agendaText.ForeColor = Color.LightSkyBlue;
+           // this.agendaText.ForeColor = Color.LightSkyBlue;
             this.dayRadio.ForeColor = Color.Blue;
             this.dayRadio.BackColor = Color.LightGray;
             this.weekRadio.ForeColor = Color.Blue;

@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\wrkFloFinanceTracker"
   ],
-  "SelectedNode": "\\wrkFloMealPlanner.sln",
+  "SelectedNode": "\\wrkFloFinanceTracker\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }

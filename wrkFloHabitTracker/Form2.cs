@@ -12,6 +12,7 @@ namespace wrkFloHabitTracker
 {
     public partial class HabitForm : Form
     {
+        public string HabitName { get; private set; }
         public HabitForm()
         {
             InitializeComponent();
@@ -23,12 +24,15 @@ namespace wrkFloHabitTracker
 
         private void CancelButton__Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            DialogResult = DialogResult.Cancel;
+            Close();
         }
 
         private void AddButton__Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            HabitName = habitTextBox.Text;
+            DialogResult = DialogResult.OK;
+            Close();
         }
 
     }

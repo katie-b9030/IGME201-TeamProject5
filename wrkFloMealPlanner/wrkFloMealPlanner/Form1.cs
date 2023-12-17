@@ -63,9 +63,11 @@ namespace wrkFloMealPlanner
                 // Get the URL from the selected row
                 //string url = recipesTable.Rows[e.RowIndex]["URL"].ToString();
 
+                DataGridViewCell cell = (DataGridViewCell) recipeDataGridView.Rows[e.RowIndex].Cells[e.ColumnIndex];
+                
                 // Open the URL in the WebBrowser control
-                Form2 newItemForm = new Form2(ref shoppingListCheckedListBox);
-                newItemForm.ShowDialog();
+                Form3 recipeWebsite = new Form3((string)cell.Value, recipes[(string)cell.Value]);
+                recipeWebsite.ShowDialog();
             }
         }
 

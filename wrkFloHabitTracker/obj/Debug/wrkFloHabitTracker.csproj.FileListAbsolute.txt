@@ -1,0 +1,11 @@
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloHabitTracker\bin\Debug\wrkFloHabitTracker.exe.config
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloHabitTracker\bin\Debug\wrkFloHabitTracker.exe
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloHabitTracker\bin\Debug\wrkFloHabitTracker.pdb
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloHabitTracker\obj\Debug\wrkFloHabitTracker.csproj.AssemblyReference.cache
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloHabitTracker\obj\Debug\wrkFloHabitTracker.Form1.resources
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloHabitTracker\obj\Debug\wrkFloHabitTracker.HabitForm.resources
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloHabitTracker\obj\Debug\wrkFloHabitTracker.Properties.Resources.resources
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloHabitTracker\obj\Debug\wrkFloHabitTracker.csproj.GenerateResource.cache
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloHabitTracker\obj\Debug\wrkFloHabitTracker.csproj.CoreCompileInputs.cache
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloHabitTracker\obj\Debug\wrkFloHabitTracker.exe
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloHabitTracker\obj\Debug\wrkFloHabitTracker.pdb

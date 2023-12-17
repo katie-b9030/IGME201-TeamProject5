@@ -1,0 +1,11 @@
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloMealPlanner\wrkFloMealPlanner\bin\Debug\wrkFloMealPlanner.exe.config
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloMealPlanner\wrkFloMealPlanner\bin\Debug\wrkFloMealPlanner.exe
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloMealPlanner\wrkFloMealPlanner\bin\Debug\wrkFloMealPlanner.pdb
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloMealPlanner\wrkFloMealPlanner\obj\Debug\wrkFloMealPlanner.csproj.AssemblyReference.cache
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloMealPlanner\wrkFloMealPlanner\obj\Debug\wrkFloMealPlanner.Form1.resources
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloMealPlanner\wrkFloMealPlanner\obj\Debug\wrkFloMealPlanner.Form2.resources
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloMealPlanner\wrkFloMealPlanner\obj\Debug\wrkFloMealPlanner.Properties.Resources.resources
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloMealPlanner\wrkFloMealPlanner\obj\Debug\wrkFloMealPlanner.csproj.GenerateResource.cache
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloMealPlanner\wrkFloMealPlanner\obj\Debug\wrkFloMealPlanner.csproj.CoreCompileInputs.cache
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloMealPlanner\wrkFloMealPlanner\obj\Debug\wrkFloMealPlanner.exe
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloMealPlanner\wrkFloMealPlanner\obj\Debug\wrkFloMealPlanner.pdb

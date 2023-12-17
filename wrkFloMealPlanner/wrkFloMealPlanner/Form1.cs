@@ -12,104 +12,63 @@ namespace wrkFloMealPlanner
 {
     public partial class Form1 : Form
     {
+        public DataTable recipesTable;
+        public Dictionary<string, string> recipes = new Dictionary<string, string>();
+
+
         public Form1()
         {
             InitializeComponent();
+            
+
+            recipes.Add("Honey Garlic Chicken", "https://www.recipetineats.com/honey-garlic-chicken/");
+            recipes.Add("Mini Chocolate Cakes", "https://www.recipetineats.com/mini-chocolate-cakes/");
+            recipes.Add("Lamb Souvlaki", "https://www.recipetineats.com/lamb-souvlaki/");
+
+            InitializeRecipesTable();
+
+            recipeDataGridView.DataSource = recipesTable;
+            recipeDataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+
+            newItemButton.Click += new EventHandler(NewItemButton__Click);
+            recipeDataGridView.CellClick += new DataGridViewCellEventHandler(RecipeDataGridView_CellClick);
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void InitializeRecipesTable()
         {
+            // Create a DataTable with columns for your recipes
+            recipesTable = new DataTable();
+            recipesTable.Columns.Add("RecipeName", typeof(string));
+            
 
+            // Add some sample data (replace this with your actual data)
+            foreach (string recipe in recipes.Keys)
+            {
+                recipesTable.Rows.Add(recipe);
+            }
+            
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void NewItemButton__Click(object sender, EventArgs e)
         {
-
+            Form2 newItemForm = new Form2(ref shoppingListCheckedListBox);
+            newItemForm.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void RecipeDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            // Check if a valid row is clicked
+            if (e.RowIndex >= 0 && e.RowIndex < recipesTable.Rows.Count)
+            {
+                // Get the URL from the selected row
+                //string url = recipesTable.Rows[e.RowIndex]["URL"].ToString();
 
+                // Open the URL in the WebBrowser control
+                Form2 newItemForm = new Form2(ref shoppingListCheckedListBox);
+                newItemForm.ShowDialog();
+            }
         }
 
-        private void financesListView_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void progressBar2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void progressBar1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

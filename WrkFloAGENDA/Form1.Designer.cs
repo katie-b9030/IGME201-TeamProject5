@@ -28,20 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.monthCalendar = new System.Windows.Forms.MonthCalendar();
+            this.agendaCalendar = new System.Windows.Forms.MonthCalendar();
             this.plusButton = new System.Windows.Forms.Button();
-            this.yearButton = new System.Windows.Forms.Button();
-            this.monthButton = new System.Windows.Forms.Button();
-            this.weekButton = new System.Windows.Forms.Button();
-            this.dayButton = new System.Windows.Forms.Button();
             this.agendaText = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
-            this.decreaseArrow = new System.Windows.Forms.Button();
-            this.increaseArrow = new System.Windows.Forms.Button();
+            this.yearRadio = new System.Windows.Forms.RadioButton();
+            this.monthRadio = new System.Windows.Forms.RadioButton();
+            this.weekRadio = new System.Windows.Forms.RadioButton();
+            this.dayRadio = new System.Windows.Forms.RadioButton();
+            this.addEventButton = new System.Windows.Forms.Button();
+            this.addEventText = new System.Windows.Forms.Label();
+            this.addEventBox = new System.Windows.Forms.TextBox();
+            this.eventListBox = new System.Windows.Forms.Panel();
+            this.event3 = new System.Windows.Forms.CheckBox();
+            this.event2 = new System.Windows.Forms.CheckBox();
+            this.event1 = new System.Windows.Forms.CheckBox();
             this.eventsText = new System.Windows.Forms.Label();
             this.viewAllEvents = new System.Windows.Forms.Button();
-            this.eventListBox = new System.Windows.Forms.Panel();
+            this.decreaseArrow = new System.Windows.Forms.Button();
+            this.increaseArrow = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -49,14 +55,15 @@
             this.eventListBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // monthCalendar
+            // agendaCalendar
             // 
-            this.monthCalendar.FirstDayOfWeek = System.Windows.Forms.Day.Monday;
-            this.monthCalendar.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.monthCalendar.Location = new System.Drawing.Point(26, 233);
-            this.monthCalendar.Name = "monthCalendar";
-            this.monthCalendar.TabIndex = 13;
-            this.monthCalendar.TitleForeColor = System.Drawing.SystemColors.Desktop;
+            this.agendaCalendar.FirstDayOfWeek = System.Windows.Forms.Day.Monday;
+            this.agendaCalendar.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.agendaCalendar.Location = new System.Drawing.Point(26, 233);
+            this.agendaCalendar.Name = "agendaCalendar";
+            this.agendaCalendar.TabIndex = 13;
+            this.agendaCalendar.TitleForeColor = System.Drawing.SystemColors.Desktop;
+            this.agendaCalendar.TodayDate = new System.DateTime(2023, 12, 18, 0, 0, 0, 0);
             // 
             // plusButton
             // 
@@ -67,46 +74,6 @@
             this.plusButton.TabIndex = 12;
             this.plusButton.Text = "+";
             this.plusButton.UseVisualStyleBackColor = true;
-            // 
-            // yearButton
-            // 
-            this.yearButton.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yearButton.Location = new System.Drawing.Point(469, 83);
-            this.yearButton.Name = "yearButton";
-            this.yearButton.Size = new System.Drawing.Size(80, 40);
-            this.yearButton.TabIndex = 11;
-            this.yearButton.Text = "Year";
-            this.yearButton.UseVisualStyleBackColor = true;
-            // 
-            // monthButton
-            // 
-            this.monthButton.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monthButton.Location = new System.Drawing.Point(333, 83);
-            this.monthButton.Name = "monthButton";
-            this.monthButton.Size = new System.Drawing.Size(90, 40);
-            this.monthButton.TabIndex = 10;
-            this.monthButton.Text = "Month";
-            this.monthButton.UseVisualStyleBackColor = true;
-            // 
-            // weekButton
-            // 
-            this.weekButton.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weekButton.Location = new System.Drawing.Point(198, 83);
-            this.weekButton.Name = "weekButton";
-            this.weekButton.Size = new System.Drawing.Size(90, 40);
-            this.weekButton.TabIndex = 9;
-            this.weekButton.Text = "Week";
-            this.weekButton.UseVisualStyleBackColor = true;
-            // 
-            // dayButton
-            // 
-            this.dayButton.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dayButton.Location = new System.Drawing.Point(78, 83);
-            this.dayButton.Name = "dayButton";
-            this.dayButton.Size = new System.Drawing.Size(86, 40);
-            this.dayButton.TabIndex = 8;
-            this.dayButton.Text = "Day";
-            this.dayButton.UseVisualStyleBackColor = true;
             // 
             // agendaText
             // 
@@ -130,16 +97,19 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.yearRadio);
+            this.splitContainer1.Panel2.Controls.Add(this.monthRadio);
+            this.splitContainer1.Panel2.Controls.Add(this.weekRadio);
+            this.splitContainer1.Panel2.Controls.Add(this.dayRadio);
+            this.splitContainer1.Panel2.Controls.Add(this.addEventButton);
+            this.splitContainer1.Panel2.Controls.Add(this.addEventText);
+            this.splitContainer1.Panel2.Controls.Add(this.addEventBox);
             this.splitContainer1.Panel2.Controls.Add(this.eventListBox);
             this.splitContainer1.Panel2.Controls.Add(this.decreaseArrow);
             this.splitContainer1.Panel2.Controls.Add(this.increaseArrow);
-            this.splitContainer1.Panel2.Controls.Add(this.monthCalendar);
+            this.splitContainer1.Panel2.Controls.Add(this.agendaCalendar);
             this.splitContainer1.Panel2.Controls.Add(this.agendaText);
-            this.splitContainer1.Panel2.Controls.Add(this.yearButton);
             this.splitContainer1.Panel2.Controls.Add(this.plusButton);
-            this.splitContainer1.Panel2.Controls.Add(this.monthButton);
-            this.splitContainer1.Panel2.Controls.Add(this.dayButton);
-            this.splitContainer1.Panel2.Controls.Add(this.weekButton);
             this.splitContainer1.Size = new System.Drawing.Size(794, 446);
             this.splitContainer1.SplitterDistance = 199;
             this.splitContainer1.TabIndex = 14;
@@ -152,6 +122,139 @@
             this.label1.Size = new System.Drawing.Size(102, 16);
             this.label1.TabIndex = 16;
             this.label1.Text = "Nav will go here";
+            // 
+            // yearRadio
+            // 
+            this.yearRadio.AutoSize = true;
+            this.yearRadio.Location = new System.Drawing.Point(459, 91);
+            this.yearRadio.Name = "yearRadio";
+            this.yearRadio.Size = new System.Drawing.Size(57, 20);
+            this.yearRadio.TabIndex = 23;
+            this.yearRadio.TabStop = true;
+            this.yearRadio.Text = "Year";
+            this.yearRadio.UseVisualStyleBackColor = true;
+            // 
+            // monthRadio
+            // 
+            this.monthRadio.AutoSize = true;
+            this.monthRadio.Location = new System.Drawing.Point(317, 91);
+            this.monthRadio.Name = "monthRadio";
+            this.monthRadio.Size = new System.Drawing.Size(64, 20);
+            this.monthRadio.TabIndex = 22;
+            this.monthRadio.TabStop = true;
+            this.monthRadio.Text = "Month";
+            this.monthRadio.UseVisualStyleBackColor = true;
+            // 
+            // weekRadio
+            // 
+            this.weekRadio.AutoSize = true;
+            this.weekRadio.Location = new System.Drawing.Point(184, 91);
+            this.weekRadio.Name = "weekRadio";
+            this.weekRadio.Size = new System.Drawing.Size(64, 20);
+            this.weekRadio.TabIndex = 21;
+            this.weekRadio.TabStop = true;
+            this.weekRadio.Text = "Week";
+            this.weekRadio.UseVisualStyleBackColor = true;
+            // 
+            // dayRadio
+            // 
+            this.dayRadio.AutoSize = true;
+            this.dayRadio.Location = new System.Drawing.Point(75, 91);
+            this.dayRadio.Name = "dayRadio";
+            this.dayRadio.Size = new System.Drawing.Size(53, 20);
+            this.dayRadio.TabIndex = 20;
+            this.dayRadio.TabStop = true;
+            this.dayRadio.Text = "Day";
+            this.dayRadio.UseVisualStyleBackColor = true;
+            // 
+            // addEventButton
+            // 
+            this.addEventButton.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addEventButton.Location = new System.Drawing.Point(416, 192);
+            this.addEventButton.Name = "addEventButton";
+            this.addEventButton.Size = new System.Drawing.Size(66, 29);
+            this.addEventButton.TabIndex = 18;
+            this.addEventButton.Text = "Add";
+            this.addEventButton.UseVisualStyleBackColor = true;
+            // 
+            // addEventText
+            // 
+            this.addEventText.AutoSize = true;
+            this.addEventText.Location = new System.Drawing.Point(224, 154);
+            this.addEventText.Name = "addEventText";
+            this.addEventText.Size = new System.Drawing.Size(211, 16);
+            this.addEventText.TabIndex = 19;
+            this.addEventText.Text = "Select Day, Then Add Event Here:";
+            // 
+            // addEventBox
+            // 
+            this.addEventBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.addEventBox.Location = new System.Drawing.Point(459, 151);
+            this.addEventBox.Name = "addEventBox";
+            this.addEventBox.Size = new System.Drawing.Size(100, 22);
+            this.addEventBox.TabIndex = 18;
+            // 
+            // eventListBox
+            // 
+            this.eventListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.eventListBox.Controls.Add(this.event3);
+            this.eventListBox.Controls.Add(this.event2);
+            this.eventListBox.Controls.Add(this.event1);
+            this.eventListBox.Controls.Add(this.eventsText);
+            this.eventListBox.Controls.Add(this.viewAllEvents);
+            this.eventListBox.Location = new System.Drawing.Point(350, 233);
+            this.eventListBox.Name = "eventListBox";
+            this.eventListBox.Size = new System.Drawing.Size(212, 204);
+            this.eventListBox.TabIndex = 18;
+            // 
+            // event3
+            // 
+            this.event3.AutoSize = true;
+            this.event3.Location = new System.Drawing.Point(12, 98);
+            this.event3.Name = "event3";
+            this.event3.Size = new System.Drawing.Size(18, 17);
+            this.event3.TabIndex = 20;
+            this.event3.UseVisualStyleBackColor = true;
+            // 
+            // event2
+            // 
+            this.event2.AutoSize = true;
+            this.event2.Location = new System.Drawing.Point(12, 75);
+            this.event2.Name = "event2";
+            this.event2.Size = new System.Drawing.Size(18, 17);
+            this.event2.TabIndex = 19;
+            this.event2.UseVisualStyleBackColor = true;
+            // 
+            // event1
+            // 
+            this.event1.AutoSize = true;
+            this.event1.Location = new System.Drawing.Point(12, 52);
+            this.event1.Name = "event1";
+            this.event1.Size = new System.Drawing.Size(18, 17);
+            this.event1.TabIndex = 18;
+            this.event1.UseVisualStyleBackColor = true;
+            // 
+            // eventsText
+            // 
+            this.eventsText.AutoSize = true;
+            this.eventsText.Font = new System.Drawing.Font("Tw Cen MT Condensed", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eventsText.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.eventsText.Location = new System.Drawing.Point(38, 14);
+            this.eventsText.Name = "eventsText";
+            this.eventsText.Size = new System.Drawing.Size(127, 26);
+            this.eventsText.TabIndex = 16;
+            this.eventsText.Text = "Events For Today:";
+            // 
+            // viewAllEvents
+            // 
+            this.viewAllEvents.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewAllEvents.Location = new System.Drawing.Point(48, 159);
+            this.viewAllEvents.Name = "viewAllEvents";
+            this.viewAllEvents.Size = new System.Drawing.Size(100, 40);
+            this.viewAllEvents.TabIndex = 17;
+            this.viewAllEvents.Text = "View All";
+            this.viewAllEvents.UseVisualStyleBackColor = true;
+            this.viewAllEvents.Click += new System.EventHandler(this.viewAllEvents_Click);
             // 
             // decreaseArrow
             // 
@@ -171,38 +274,6 @@
             this.increaseArrow.Text = "-->";
             this.increaseArrow.UseVisualStyleBackColor = true;
             // 
-            // eventsText
-            // 
-            this.eventsText.AutoSize = true;
-            this.eventsText.Font = new System.Drawing.Font("Tw Cen MT Condensed", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.eventsText.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.eventsText.Location = new System.Drawing.Point(43, 13);
-            this.eventsText.Name = "eventsText";
-            this.eventsText.Size = new System.Drawing.Size(105, 26);
-            this.eventsText.TabIndex = 16;
-            this.eventsText.Text = "Events Added:";
-            // 
-            // viewAllEvents
-            // 
-            this.viewAllEvents.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewAllEvents.Location = new System.Drawing.Point(48, 159);
-            this.viewAllEvents.Name = "viewAllEvents";
-            this.viewAllEvents.Size = new System.Drawing.Size(100, 40);
-            this.viewAllEvents.TabIndex = 17;
-            this.viewAllEvents.Text = "View All";
-            this.viewAllEvents.UseVisualStyleBackColor = true;
-            this.viewAllEvents.Click += new System.EventHandler(this.viewAllEvents_Click);
-            // 
-            // eventListBox
-            // 
-            this.eventListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.eventListBox.Controls.Add(this.eventsText);
-            this.eventListBox.Controls.Add(this.viewAllEvents);
-            this.eventListBox.Location = new System.Drawing.Point(350, 233);
-            this.eventListBox.Name = "eventListBox";
-            this.eventListBox.Size = new System.Drawing.Size(212, 204);
-            this.eventListBox.TabIndex = 18;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -210,7 +281,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "WrkFlo Agenda";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -225,12 +296,8 @@
 
         #endregion
 
-        private System.Windows.Forms.MonthCalendar monthCalendar;
+        private System.Windows.Forms.MonthCalendar agendaCalendar;
         private System.Windows.Forms.Button plusButton;
-        private System.Windows.Forms.Button yearButton;
-        private System.Windows.Forms.Button monthButton;
-        private System.Windows.Forms.Button weekButton;
-        private System.Windows.Forms.Button dayButton;
         private System.Windows.Forms.Label agendaText;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Button decreaseArrow;
@@ -239,6 +306,16 @@
         private System.Windows.Forms.Button viewAllEvents;
         private System.Windows.Forms.Label eventsText;
         private System.Windows.Forms.Panel eventListBox;
+        private System.Windows.Forms.TextBox addEventBox;
+        private System.Windows.Forms.Label addEventText;
+        private System.Windows.Forms.Button addEventButton;
+        private System.Windows.Forms.CheckBox event2;
+        private System.Windows.Forms.CheckBox event1;
+        private System.Windows.Forms.CheckBox event3;
+        private System.Windows.Forms.RadioButton yearRadio;
+        private System.Windows.Forms.RadioButton monthRadio;
+        private System.Windows.Forms.RadioButton weekRadio;
+        private System.Windows.Forms.RadioButton dayRadio;
     }
 }
 

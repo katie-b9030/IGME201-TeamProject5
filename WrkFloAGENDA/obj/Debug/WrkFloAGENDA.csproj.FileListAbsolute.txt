@@ -8,3 +8,13 @@ C:\Users\15086\Downloads\201TeamProj\WrkFloAGENDA\bin\Debug\WrkFloAGENDA.pdb
 C:\Users\15086\Downloads\201TeamProj\WrkFloAGENDA\obj\Debug\WrkFloAGENDA.Form1.resources
 C:\Users\15086\Downloads\201TeamProj\WrkFloAGENDA\obj\Debug\WrkFloAGENDA.exe
 C:\Users\15086\Downloads\201TeamProj\WrkFloAGENDA\obj\Debug\WrkFloAGENDA.pdb
+C:\Users\15086\Desktop\IGME201-TeamProj5\WrkFloAgenda\bin\Debug\WrkFloAGENDA.exe.config
+C:\Users\15086\Desktop\IGME201-TeamProj5\WrkFloAgenda\bin\Debug\WrkFloAGENDA.exe
+C:\Users\15086\Desktop\IGME201-TeamProj5\WrkFloAgenda\bin\Debug\WrkFloAGENDA.pdb
+C:\Users\15086\Desktop\IGME201-TeamProj5\WrkFloAgenda\obj\Debug\WrkFloAGENDA.csproj.AssemblyReference.cache
+C:\Users\15086\Desktop\IGME201-TeamProj5\WrkFloAgenda\obj\Debug\WrkFloAGENDA.Form1.resources
+C:\Users\15086\Desktop\IGME201-TeamProj5\WrkFloAgenda\obj\Debug\WrkFloAGENDA.Properties.Resources.resources
+C:\Users\15086\Desktop\IGME201-TeamProj5\WrkFloAgenda\obj\Debug\WrkFloAGENDA.csproj.GenerateResource.cache
+C:\Users\15086\Desktop\IGME201-TeamProj5\WrkFloAgenda\obj\Debug\WrkFloAGENDA.csproj.CoreCompileInputs.cache
+C:\Users\15086\Desktop\IGME201-TeamProj5\WrkFloAgenda\obj\Debug\WrkFloAGENDA.exe
+C:\Users\15086\Desktop\IGME201-TeamProj5\WrkFloAgenda\obj\Debug\WrkFloAGENDA.pdb

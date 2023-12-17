@@ -1,0 +1,10 @@
+C:\Users\15086\Desktop\myIGME-201\WrkFlo\bin\Debug\WrkFlo.exe.config
+C:\Users\15086\Desktop\myIGME-201\WrkFlo\bin\Debug\WrkFlo.exe
+C:\Users\15086\Desktop\myIGME-201\WrkFlo\bin\Debug\WrkFlo.pdb
+C:\Users\15086\Desktop\myIGME-201\WrkFlo\obj\Debug\WrkFlo.csproj.AssemblyReference.cache
+C:\Users\15086\Desktop\myIGME-201\WrkFlo\obj\Debug\WrkFlo.Form1.resources
+C:\Users\15086\Desktop\myIGME-201\WrkFlo\obj\Debug\WrkFlo.Properties.Resources.resources
+C:\Users\15086\Desktop\myIGME-201\WrkFlo\obj\Debug\WrkFlo.csproj.GenerateResource.cache
+C:\Users\15086\Desktop\myIGME-201\WrkFlo\obj\Debug\WrkFlo.csproj.CoreCompileInputs.cache
+C:\Users\15086\Desktop\myIGME-201\WrkFlo\obj\Debug\WrkFlo.exe
+C:\Users\15086\Desktop\myIGME-201\WrkFlo\obj\Debug\WrkFlo.pdb

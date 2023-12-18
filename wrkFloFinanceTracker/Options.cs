@@ -35,7 +35,7 @@ namespace wrkFloFinanceTracker
             spendingPanel.Visible = false;
             transactionPanel.Visible = false;
             addButton.Enabled = false;
-            dateTextBox.Text = DateTime.Now.Date.ToString();
+            dateTextBox.Text = DateTime.Now.ToShortDateString();
 
             savingRadioButton.Click += new EventHandler(RadioButton__Click);
             spendingRadioButton.Click += new EventHandler(RadioButton__Click);
@@ -81,7 +81,7 @@ namespace wrkFloFinanceTracker
 
         private void SavingGoalTextBox__KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!Char.IsDigit(e.KeyChar))
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != '\b')
             {
                 e.Handled = true;
             }
@@ -93,7 +93,7 @@ namespace wrkFloFinanceTracker
 
         private void SpendingLimitTextBox__KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!Char.IsDigit(e.KeyChar))
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != '\b')
             {
                 e.Handled = true;
             }
@@ -113,7 +113,7 @@ namespace wrkFloFinanceTracker
 
         private void AmountTextBox__KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!Char.IsDigit(e.KeyChar))
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != '\b')
             {
                 e.Handled = true;
             }
@@ -137,10 +137,6 @@ namespace wrkFloFinanceTracker
 
         private void TagsTextBox__KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!Char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
             if (!string.IsNullOrWhiteSpace(titleTextBox.Text) && !string.IsNullOrWhiteSpace(amountTextBox.Text) && !string.IsNullOrWhiteSpace(dateTextBox.Text) && !string.IsNullOrWhiteSpace(tagsTextBox.Text) && (savTransRadioButton.Checked || spdTransRadioButton.Checked))
             {
                 addButton.Enabled = true;

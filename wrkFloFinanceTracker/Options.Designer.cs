@@ -40,18 +40,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.transactionPanel = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.spdTransRadioButton = new System.Windows.Forms.RadioButton();
+            this.savTransRadioButton = new System.Windows.Forms.RadioButton();
+            this.dateTextBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.tagsTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.amountTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.titleTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTextBox = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.cancelButton = new System.Windows.Forms.Button();
-            this.savTransRadioButton = new System.Windows.Forms.RadioButton();
-            this.spdTransRadioButton = new System.Windows.Forms.RadioButton();
-            this.label8 = new System.Windows.Forms.Label();
             this.savingPanel.SuspendLayout();
             this.spendingPanel.SuspendLayout();
             this.transactionPanel.SuspendLayout();
@@ -73,10 +73,10 @@
             this.spendingRadioButton.AutoSize = true;
             this.spendingRadioButton.Location = new System.Drawing.Point(50, 103);
             this.spendingRadioButton.Name = "spendingRadioButton";
-            this.spendingRadioButton.Size = new System.Drawing.Size(95, 17);
+            this.spendingRadioButton.Size = new System.Drawing.Size(94, 17);
             this.spendingRadioButton.TabIndex = 1;
             this.spendingRadioButton.TabStop = true;
-            this.spendingRadioButton.Text = "Spending Goal";
+            this.spendingRadioButton.Text = "Spending Limit";
             this.spendingRadioButton.UseVisualStyleBackColor = true;
             // 
             // transactionRadioButton
@@ -111,7 +111,6 @@
             // savingPanel
             // 
             this.savingPanel.Controls.Add(this.savingGoalTextBox);
-            this.savingPanel.Controls.Add(this.spendingPanel);
             this.savingPanel.Controls.Add(this.label2);
             this.savingPanel.Location = new System.Drawing.Point(214, 27);
             this.savingPanel.Name = "savingPanel";
@@ -129,7 +128,7 @@
             // 
             this.spendingPanel.Controls.Add(this.spendingLimitTextBox);
             this.spendingPanel.Controls.Add(this.label3);
-            this.spendingPanel.Location = new System.Drawing.Point(0, 0);
+            this.spendingPanel.Location = new System.Drawing.Point(214, 27);
             this.spendingPanel.Name = "spendingPanel";
             this.spendingPanel.Size = new System.Drawing.Size(210, 139);
             this.spendingPanel.TabIndex = 6;
@@ -176,6 +175,53 @@
             this.transactionPanel.Name = "transactionPanel";
             this.transactionPanel.Size = new System.Drawing.Size(210, 183);
             this.transactionPanel.TabIndex = 7;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(19, 139);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(158, 13);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "What type of transaction is this?";
+            // 
+            // spdTransRadioButton
+            // 
+            this.spdTransRadioButton.AutoSize = true;
+            this.spdTransRadioButton.Location = new System.Drawing.Point(114, 160);
+            this.spdTransRadioButton.Name = "spdTransRadioButton";
+            this.spdTransRadioButton.Size = new System.Drawing.Size(68, 17);
+            this.spdTransRadioButton.TabIndex = 13;
+            this.spdTransRadioButton.TabStop = true;
+            this.spdTransRadioButton.Text = "spending";
+            this.spdTransRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // savTransRadioButton
+            // 
+            this.savTransRadioButton.AutoSize = true;
+            this.savTransRadioButton.Location = new System.Drawing.Point(14, 160);
+            this.savTransRadioButton.Name = "savTransRadioButton";
+            this.savTransRadioButton.Size = new System.Drawing.Size(56, 17);
+            this.savTransRadioButton.TabIndex = 12;
+            this.savTransRadioButton.TabStop = true;
+            this.savTransRadioButton.Text = "saving";
+            this.savTransRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // dateTextBox
+            // 
+            this.dateTextBox.Location = new System.Drawing.Point(44, 73);
+            this.dateTextBox.Name = "dateTextBox";
+            this.dateTextBox.Size = new System.Drawing.Size(155, 20);
+            this.dateTextBox.TabIndex = 11;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(11, 76);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(30, 13);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Date";
             // 
             // tagsTextBox
             // 
@@ -225,22 +271,6 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Title";
             // 
-            // dateTextBox
-            // 
-            this.dateTextBox.Location = new System.Drawing.Point(44, 73);
-            this.dateTextBox.Name = "dateTextBox";
-            this.dateTextBox.Size = new System.Drawing.Size(155, 20);
-            this.dateTextBox.TabIndex = 11;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(11, 76);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(30, 13);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Date";
-            // 
             // cancelButton
             // 
             this.cancelButton.Location = new System.Drawing.Point(70, 216);
@@ -250,37 +280,6 @@
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             // 
-            // savTransRadioButton
-            // 
-            this.savTransRadioButton.AutoSize = true;
-            this.savTransRadioButton.Location = new System.Drawing.Point(14, 160);
-            this.savTransRadioButton.Name = "savTransRadioButton";
-            this.savTransRadioButton.Size = new System.Drawing.Size(56, 17);
-            this.savTransRadioButton.TabIndex = 12;
-            this.savTransRadioButton.TabStop = true;
-            this.savTransRadioButton.Text = "saving";
-            this.savTransRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // spdTransRadioButton
-            // 
-            this.spdTransRadioButton.AutoSize = true;
-            this.spdTransRadioButton.Location = new System.Drawing.Point(114, 160);
-            this.spdTransRadioButton.Name = "spdTransRadioButton";
-            this.spdTransRadioButton.Size = new System.Drawing.Size(68, 17);
-            this.spdTransRadioButton.TabIndex = 13;
-            this.spdTransRadioButton.TabStop = true;
-            this.spdTransRadioButton.Text = "spending";
-            this.spdTransRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(19, 139);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(158, 13);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "What type of transaction is this?";
-            // 
             // Options
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -288,6 +287,7 @@
             this.ClientSize = new System.Drawing.Size(447, 247);
             this.ControlBox = false;
             this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.spendingPanel);
             this.Controls.Add(this.transactionPanel);
             this.Controls.Add(this.savingPanel);
             this.Controls.Add(this.label1);

@@ -20,12 +20,16 @@ namespace wrkFloFinanceTracker
         Options child;
 
         int savingGoal;
+        int amtSaved;
         int spendingLimit;
+        int amtSpent;
         string transactionTitle;
         double transactionAmount;
         DateTime transactionDate;
         string transactionTags;
         bool transactionIsSaving;
+        ListViewItem firstLVI;
+        int lviCntr = 0;
 
         public FinanceTracker()
         {
@@ -58,26 +62,105 @@ namespace wrkFloFinanceTracker
                 this.transactionTags = child.transactionTags;
                 this.transactionIsSaving = child.transactionIsSaving;
 
-                KeyValuePair<string, string> keyValuePairs = new KeyValuePair<string, string>();
-                PaintListView(keyValuePairs);
+                SortedList<string, object> transactionKVP = new SortedList<string, object>();
+                KeyValuePair<string, object> keyValuePair = new KeyValuePair<string, object>("Title", transactionTitle);
+                transactionKVP.Add(keyValuePair.Key, keyValuePair.Value);
+                keyValuePair = new KeyValuePair<string, object>("Amount", transactionAmount);
+                transactionKVP.Add(keyValuePair.Key, keyValuePair.Value);
+                keyValuePair = new KeyValuePair<string, object>("Date", transactionDate);
+                transactionKVP.Add(keyValuePair.Key, keyValuePair.Value);
+                keyValuePair = new KeyValuePair<string, object>("Tags", transactionTags);
+                transactionKVP.Add(keyValuePair.Key, keyValuePair.Value);
+                PaintListView(transactionKVP);
 
-                if (this.transactionIsSaving )
+                if (this.transactionIsSaving)
                 {
-                    savingsProgressBar.Value += (int)transactionAmount;
+                    amtSaved += (int)transactionAmount;
                 }
                 else
                 {
-                    spendingProgressBar.Value += (int)transactionAmount;
+                    amtSpent += (int)transactionAmount;
                 }
             }
+            if (this.amtSaved < this.savingGoal)
+            {
+                savingsProgressBar.Value += amtSaved;
+            }
+            else
+            {
+                savingsProgressBar.Value = savingGoal;
+            }
+            if (this.amtSpent < this.spendingLimit)
+            {
+                spendingProgressBar.Value += amtSpent;
+            }
+            else
+            {
+                spendingProgressBar.Value = spendingLimit;
+            }
 
-            spentLabel.Text = "$" + spendingProgressBar.Value + " /" + " $" + spendingProgressBar.Maximum;
-            savedLabel.Text = "$" + savingsProgressBar.Value + " /" + " $" + savingsProgressBar.Maximum;
+            spentLabel.Text = "$" + amtSpent + " /" + " $" + spendingLimit;
+            savedLabel.Text = "$" + amtSaved + " /" + " $" + savingGoal;
         }
 
-        private void PaintListView(KeyValuePair<string, string> keyValuePairs)
+        private void PaintListView(SortedList<string, object> keyValuePairs)
         {
+            ListViewItem lvi = null;
+            ListViewItem.ListViewSubItem lvsi = null;
 
+            if (keyValuePairs != null)
+            {
+                lvi = new ListViewItem();
+                lvi.Text = keyValuePairs["Title"].ToString();
+                lvi.Tag = keyValuePairs["Title"].ToString();
+
+                if (lviCntr % 2 == 0)
+                {
+                    lvi.BackColor = ColorTranslator.FromHtml("#cff5ff");
+                }
+                else
+                {
+                    lvi.BackColor = Color.White;
+                }
+                foreach (KeyValuePair<string, object> keyValuePair in keyValuePairs)
+                {
+                    string key = keyValuePair.Key;
+                    object value = keyValuePair.Value;
+
+                    if (key == "Title")
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        lvsi = new ListViewItem.ListViewSubItem();
+                        lvsi.Text = value.ToString();
+                        if (key == "Tags")
+                        {
+                            if (transactionIsSaving)
+                            {
+                                lvsi.Text += ", saved";
+                            }
+                            else
+                            {
+                                lvsi.Text += ", spent";
+                            }
+                        }
+                        lvi.SubItems.Add(lvsi);
+                    }
+                    if (lviCntr == 0)
+                    {
+                        lvi.Selected = true;
+                        lvi.Focused = true;
+                        firstLVI = lvi;
+                    }
+                }
+                financesListView.Items.Add(lvi);
+                lviCntr++;
+                this.financesListView.EndUpdate();
+                financesListView.TopItem = firstLVI;
+                financesListView.Refresh();
+            }
         }
     }
 }

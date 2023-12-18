@@ -1,0 +1,11 @@
+C:\Users\Laila Porter\OneDrive - rit.edu\Desktop\IGME 201\groupproject\IGME201-TeamProject5\NavBar\NavBar\bin\Debug\NavBar.exe.config
+C:\Users\Laila Porter\OneDrive - rit.edu\Desktop\IGME 201\groupproject\IGME201-TeamProject5\NavBar\NavBar\bin\Debug\NavBar.exe
+C:\Users\Laila Porter\OneDrive - rit.edu\Desktop\IGME 201\groupproject\IGME201-TeamProject5\NavBar\NavBar\bin\Debug\NavBar.pdb
+C:\Users\Laila Porter\OneDrive - rit.edu\Desktop\IGME 201\groupproject\IGME201-TeamProject5\NavBar\NavBar\obj\Debug\NavBar.csproj.AssemblyReference.cache
+C:\Users\Laila Porter\OneDrive - rit.edu\Desktop\IGME 201\groupproject\IGME201-TeamProject5\NavBar\NavBar\obj\Debug\NavBar.csproj.SuggestedBindingRedirects.cache
+C:\Users\Laila Porter\OneDrive - rit.edu\Desktop\IGME 201\groupproject\IGME201-TeamProject5\NavBar\NavBar\obj\Debug\NavBar.Form1.resources
+C:\Users\Laila Porter\OneDrive - rit.edu\Desktop\IGME 201\groupproject\IGME201-TeamProject5\NavBar\NavBar\obj\Debug\NavBar.Properties.Resources.resources
+C:\Users\Laila Porter\OneDrive - rit.edu\Desktop\IGME 201\groupproject\IGME201-TeamProject5\NavBar\NavBar\obj\Debug\NavBar.csproj.GenerateResource.cache
+C:\Users\Laila Porter\OneDrive - rit.edu\Desktop\IGME 201\groupproject\IGME201-TeamProject5\NavBar\NavBar\obj\Debug\NavBar.csproj.CoreCompileInputs.cache
+C:\Users\Laila Porter\OneDrive - rit.edu\Desktop\IGME 201\groupproject\IGME201-TeamProject5\NavBar\NavBar\obj\Debug\NavBar.exe
+C:\Users\Laila Porter\OneDrive - rit.edu\Desktop\IGME 201\groupproject\IGME201-TeamProject5\NavBar\NavBar\obj\Debug\NavBar.pdb

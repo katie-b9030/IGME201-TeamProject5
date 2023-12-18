@@ -6,69 +6,111 @@ using System.Threading.Tasks;
 
 namespace wrkFloMealPlanner
 {
-    internal class MealPlan
+    public class Meal
+    {
+        private string name;
+        private string url;
+        public Meal(string name = "None", string url = null) 
+        {
+            this.name = name;
+            this.url = url;
+        }
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public string Url
+        {
+            get { return url; }
+            set { url = value; }
+        }
+    }
+    public enum MealType
+    {
+        Breakfast,
+        Lunch,
+        Dinner
+    }
+    public class MealPlan
     {
         private DateTime date;
-        private KeyValuePair<string, string> breakfast;
-        private KeyValuePair<string, string> lunch;
-        private KeyValuePair<string, string> dinner;
+        private Meal breakfast;
+        private Meal lunch;
+        private Meal dinner;
 
-        public enum Meal
-        {
-            Breakfast,
-            Lunch,
-            Dinner
-        }
-
-       
-        public MealPlan(DateTime date, 
-            KeyValuePair<string, string> breakfast = new KeyValuePair<string, string>(), 
-            KeyValuePair<string, string> lunch = new KeyValuePair<string, string>(), 
-            KeyValuePair<string, string> dinner = new KeyValuePair<string, string>()) 
+        
+        public MealPlan(DateTime date)
         { 
             this.date = date;
-           
+            this.breakfast = new Meal();
+            this.lunch = new Meal();
+            this.dinner = new Meal();
+
         }
 
-        public KeyValuePair<string, string> Breakfast
-        {
-            get { return this.breakfast; }
-            set { this.breakfast = value; }
-        }
-
-        public KeyValuePair<string, string> Lunch
-        {
-            get { return this.lunch; }
-            set { this.lunch = value; }
-        }
-
-        public KeyValuePair<string, string> Dinner
-        {
-            get { return this.dinner; }
-            set { this.dinner = value; }
-        }
-
-        public void AddMeal(Meal meal, string name, string url)
+        public void AddMeal(MealType meal, string name, string url)
         {
             switch (meal)
             {
-                case Meal.Breakfast:
-                    updateMeal(Breakfast, name, url);
+                case MealType.Breakfast:
+                    updateMeal(breakfast, name, url);
                     break;
-                case Meal.Lunch:
-                    updateMeal(Lunch, name, url);
+                case MealType.Lunch:
+                    updateMeal(lunch, name, url);
                     break;
-                case Meal.Dinner:
-                    updateMeal(Dinner, name, url);
+                case MealType.Dinner:
+                    updateMeal(dinner, name, url);
                     break;
                 default: 
                     break;
             }
         }
 
-        public void updateMeal(KeyValuePair<string, string> mealKVP, string name, string url)
+        public void updateMeal(Meal meal, string name, string url)
         {
-            mealKVP = new KeyValuePair<string, string>(name, url);
+            meal.Name = name;
+            meal.Url = url;
+        }
+
+        public string GetMeal(MealType meal)
+        {
+            switch (meal)
+            {
+                case MealType.Breakfast:
+                    return breakfast.Name;
+                    break;
+                case MealType.Lunch:
+                    return lunch.Name;
+                    break;
+                case MealType.Dinner:
+                    return dinner.Name;
+                    break;
+                default:
+                    return "None";
+                    break;
+            }
+        }
+
+        public string GetMealURL(MealType meal)
+        {
+            switch (meal)
+            {
+                case MealType.Breakfast:
+                    return breakfast.Url;
+                    break;
+                case MealType.Lunch:
+                    return lunch.Url;
+                    break;
+                case MealType.Dinner:
+                    return dinner.Url;
+                    break;
+                default:
+                    return "None";
+                    break;
+            }
         }
     }
 }

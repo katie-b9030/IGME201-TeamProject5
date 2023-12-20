@@ -35,15 +35,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.savingPanel = new System.Windows.Forms.Panel();
             this.savingGoalTextBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.spendingPanel = new System.Windows.Forms.Panel();
             this.spendingLimitTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.transactionPanel = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.spdTransRadioButton = new System.Windows.Forms.RadioButton();
             this.savTransRadioButton = new System.Windows.Forms.RadioButton();
-            this.dateTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.tagsTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -52,6 +51,7 @@
             this.titleTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cancelButton = new System.Windows.Forms.Button();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.savingPanel.SuspendLayout();
             this.spendingPanel.SuspendLayout();
             this.transactionPanel.SuspendLayout();
@@ -124,6 +124,15 @@
             this.savingGoalTextBox.Size = new System.Drawing.Size(100, 20);
             this.savingGoalTextBox.TabIndex = 1;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(19, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(172, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "How much would you like to save?";
+            // 
             // spendingPanel
             // 
             this.spendingPanel.Controls.Add(this.spendingLimitTextBox);
@@ -149,21 +158,12 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "What is the most you would like to spend?";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(172, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "How much would you like to save?";
-            // 
             // transactionPanel
             // 
+            this.transactionPanel.Controls.Add(this.dateTimePicker);
             this.transactionPanel.Controls.Add(this.label8);
             this.transactionPanel.Controls.Add(this.spdTransRadioButton);
             this.transactionPanel.Controls.Add(this.savTransRadioButton);
-            this.transactionPanel.Controls.Add(this.dateTextBox);
             this.transactionPanel.Controls.Add(this.label7);
             this.transactionPanel.Controls.Add(this.tagsTextBox);
             this.transactionPanel.Controls.Add(this.label6);
@@ -206,13 +206,6 @@
             this.savTransRadioButton.TabStop = true;
             this.savTransRadioButton.Text = "saving";
             this.savTransRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // dateTextBox
-            // 
-            this.dateTextBox.Location = new System.Drawing.Point(44, 73);
-            this.dateTextBox.Name = "dateTextBox";
-            this.dateTextBox.Size = new System.Drawing.Size(155, 20);
-            this.dateTextBox.TabIndex = 11;
             // 
             // label7
             // 
@@ -280,6 +273,14 @@
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             // 
+            // dateTimePicker
+            // 
+            this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker.Location = new System.Drawing.Point(47, 76);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(152, 20);
+            this.dateTimePicker.TabIndex = 15;
+            // 
             // Options
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -328,11 +329,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox amountTextBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox dateTextBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.RadioButton spdTransRadioButton;
         private System.Windows.Forms.RadioButton savTransRadioButton;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
     }
 }

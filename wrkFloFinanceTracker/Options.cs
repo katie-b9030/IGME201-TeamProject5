@@ -10,6 +10,11 @@ using System.Windows.Forms;
 
 namespace wrkFloFinanceTracker
 {
+    /* Class: Options
+     * Author: Katie Bogart
+     * Purpose: creates the options form
+     * Restrictions: None
+     */
     public partial class Options : Form
     {
         Form parent;
@@ -22,8 +27,12 @@ namespace wrkFloFinanceTracker
         public string transactionTags;
         public bool transactionIsSaving;
 
-        RadioButton transactionType;
-
+        /* Method: Options
+         * Purpose: constructs the options form
+         *          sets values for variables
+         *          sets up event handlers
+         * Restrictions: None
+         */
         public Options(Form parent)
         {
             InitializeComponent();
@@ -35,7 +44,7 @@ namespace wrkFloFinanceTracker
             spendingPanel.Visible = false;
             transactionPanel.Visible = false;
             addButton.Enabled = false;
-            dateTextBox.Text = DateTime.Now.ToShortDateString();
+            dateTimePicker.Value = DateTime.Now;
 
             savingRadioButton.Click += new EventHandler(RadioButton__Click);
             spendingRadioButton.Click += new EventHandler(RadioButton__Click);
@@ -47,7 +56,6 @@ namespace wrkFloFinanceTracker
 
             titleTextBox.KeyPress += new KeyPressEventHandler(TitleTextBox__KeyPress);
             amountTextBox.KeyPress += new KeyPressEventHandler(AmountTextBox__KeyPress);
-            dateTextBox.KeyPress += new KeyPressEventHandler(DateTextBox__KeyPress);
             tagsTextBox.KeyPress += new KeyPressEventHandler(TagsTextBox__KeyPress);
             savTransRadioButton.Click += new EventHandler(TransRadioButton__Click);
             spdTransRadioButton.Click += new EventHandler(TransRadioButton__Click);
@@ -56,6 +64,11 @@ namespace wrkFloFinanceTracker
             cancelButton.Click += new EventHandler(CancelButton__Click);
         }
 
+        /* Method: RadioButton__Click
+         * Purpose: checks which radio button is clicked
+         *          makes the right panel visible based on rb
+         * Restrictions: None
+         */
         private void RadioButton__Click(object sender, EventArgs e)
         {
             RadioButton rb = (RadioButton)sender;
@@ -79,6 +92,10 @@ namespace wrkFloFinanceTracker
             }
         }
 
+        /* Method: SavingGoalTextBox__KeyPress
+         * Purpose: checks if input is backspace or digit
+         * Restrictions: None
+         */
         private void SavingGoalTextBox__KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && e.KeyChar != '\b')
@@ -91,6 +108,10 @@ namespace wrkFloFinanceTracker
             }
         }
 
+        /* Method: SpendingLimitTextBox__KeyPress
+         * Purpose: checks if input is backspace or digit
+         * Restrictions: None
+         */
         private void SpendingLimitTextBox__KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && e.KeyChar != '\b')
@@ -103,57 +124,78 @@ namespace wrkFloFinanceTracker
             }
         }
 
+        /* Method: TitleTextBox__KeyPress
+         * Purpose: checks if all inputs are filled
+         * Restrictions: None
+         */
         private void TitleTextBox__KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(titleTextBox.Text) && !string.IsNullOrWhiteSpace(amountTextBox.Text) && !string.IsNullOrWhiteSpace(dateTextBox.Text) && !string.IsNullOrWhiteSpace(tagsTextBox.Text) && (savTransRadioButton.Checked || spdTransRadioButton.Checked))
+            if (!string.IsNullOrWhiteSpace(titleTextBox.Text) && !string.IsNullOrWhiteSpace(amountTextBox.Text) && !string.IsNullOrWhiteSpace(tagsTextBox.Text) && (savTransRadioButton.Checked || spdTransRadioButton.Checked))
             {
                 addButton.Enabled = true;
             }
         }
 
+        /* Method: AmountBox__KeyPress
+         * Purpose: checks if input is backspace or digit or .
+         *          checks if all inputs are filled
+         * Restrictions: None
+         */
         private void AmountTextBox__KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != '\b')
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != '\b' && e.KeyChar != '.')
             {
                 e.Handled = true;
             }
-            if (!string.IsNullOrWhiteSpace(titleTextBox.Text) && !string.IsNullOrWhiteSpace(amountTextBox.Text) && !string.IsNullOrWhiteSpace(dateTextBox.Text) && !string.IsNullOrWhiteSpace(tagsTextBox.Text) && (savTransRadioButton.Checked || spdTransRadioButton.Checked))
+            if (!string.IsNullOrWhiteSpace(titleTextBox.Text) && !string.IsNullOrWhiteSpace(amountTextBox.Text) && !string.IsNullOrWhiteSpace(tagsTextBox.Text) && (savTransRadioButton.Checked || spdTransRadioButton.Checked))
             {
                 addButton.Enabled = true;
             }
         }
 
-        private void DateTextBox__KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!Char.IsDigit(e.KeyChar) || e.KeyChar != '/' || e.KeyChar != '\b')
-            {
-                e.Handled = true;
-            }
-            if (!string.IsNullOrWhiteSpace(titleTextBox.Text) && !string.IsNullOrWhiteSpace(amountTextBox.Text) && !string.IsNullOrWhiteSpace(dateTextBox.Text) && !string.IsNullOrWhiteSpace(tagsTextBox.Text) && (savTransRadioButton.Checked || spdTransRadioButton.Checked))
-            {
-                addButton.Enabled = true;
-            }
-        }
-
+        /* Method: TagsTextBox__KeyPress
+         * Purpose: checks if all inputs are filled
+         * Restrictions: None
+         */
         private void TagsTextBox__KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(titleTextBox.Text) && !string.IsNullOrWhiteSpace(amountTextBox.Text) && !string.IsNullOrWhiteSpace(dateTextBox.Text) && !string.IsNullOrWhiteSpace(tagsTextBox.Text) && (savTransRadioButton.Checked || spdTransRadioButton.Checked))
+            if (!string.IsNullOrWhiteSpace(titleTextBox.Text) && !string.IsNullOrWhiteSpace(amountTextBox.Text) && !string.IsNullOrWhiteSpace(tagsTextBox.Text) && (savTransRadioButton.Checked || spdTransRadioButton.Checked))
             {
                 addButton.Enabled = true;
             }
         }
 
+        /* Method: TransRadioButton__Click
+         * Purpose: sets whether transaction is saving or spending
+         *          checks if all inputs are filled
+         * Restrictions: None
+         */
         private void TransRadioButton__Click(object sender, EventArgs e)
         {
             RadioButton rb = (RadioButton)sender;
-            transactionType = rb;
 
-            if (!string.IsNullOrWhiteSpace(titleTextBox.Text) && !string.IsNullOrWhiteSpace(amountTextBox.Text) && !string.IsNullOrWhiteSpace(dateTextBox.Text) && !string.IsNullOrWhiteSpace(tagsTextBox.Text) && (savTransRadioButton.Checked || spdTransRadioButton.Checked))
+            if (rb.Text == "saving")
+            {
+                transactionIsSaving = true;
+            }
+            else if (rb.Text == "saving")
+            {
+                transactionIsSaving = false;
+            }
+
+            if (!string.IsNullOrWhiteSpace(titleTextBox.Text) && !string.IsNullOrWhiteSpace(amountTextBox.Text) && !string.IsNullOrWhiteSpace(tagsTextBox.Text) && (savTransRadioButton.Checked || spdTransRadioButton.Checked))
             {
                 addButton.Enabled = true;
             }
+
         }
 
+        /* Method: AddButton__Click
+         * Purpose: checks which panel is visible
+         *          sets variable data accordingly
+         *          closes form
+         * Restrictions: None
+         */
         private void AddButton__Click(object sender, EventArgs e)
         {
             parent.Enabled = true;
@@ -168,21 +210,17 @@ namespace wrkFloFinanceTracker
             else if (transactionPanel.Visible)
             {
                 this.transactionTitle = titleTextBox.Text;
-                this.transactionAmount = Int32.Parse(amountTextBox.Text);
-                this.transactionDate = DateTime.Parse(dateTextBox.Text).Date;
+                this.transactionAmount = Double.Parse(amountTextBox.Text);
+                this.transactionDate = dateTimePicker.Value;
                 this.transactionTags = tagsTextBox.Text;
-                if (transactionType == savingRadioButton)
-                {
-                    this.transactionIsSaving = true;
-                }
-                else
-                {
-                    this.transactionIsSaving = false;
-                }
             }
             this.Close();
         }
 
+        /* Method: TitleTextBox__KeyPress
+         * Purpose: closes form
+         * Restrictions: None
+         */
         private void CancelButton__Click(object sender, EventArgs e)
         {
             parent.Enabled = true;

@@ -33,7 +33,6 @@
             this.agendaText = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
-            this.splitter1 = new System.Windows.Forms.Splitter();
             this.yearRadio = new System.Windows.Forms.RadioButton();
             this.monthRadio = new System.Windows.Forms.RadioButton();
             this.weekRadio = new System.Windows.Forms.RadioButton();
@@ -60,16 +59,16 @@
             // 
             this.agendaCalendar.FirstDayOfWeek = System.Windows.Forms.Day.Monday;
             this.agendaCalendar.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.agendaCalendar.Location = new System.Drawing.Point(26, 233);
+            this.agendaCalendar.Location = new System.Drawing.Point(122, 228);
             this.agendaCalendar.Name = "agendaCalendar";
             this.agendaCalendar.TabIndex = 13;
             this.agendaCalendar.TitleForeColor = System.Drawing.SystemColors.Desktop;
-            this.agendaCalendar.TodayDate = new System.DateTime(2023, 12, 18, 0, 0, 0, 0);
+            this.agendaCalendar.TodayDate = new System.DateTime(2023, 12, 21, 0, 0, 0, 0);
             // 
             // plusButton
             // 
             this.plusButton.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plusButton.Location = new System.Drawing.Point(20, 144);
+            this.plusButton.Location = new System.Drawing.Point(79, 141);
             this.plusButton.Name = "plusButton";
             this.plusButton.Size = new System.Drawing.Size(56, 35);
             this.plusButton.TabIndex = 12;
@@ -81,7 +80,7 @@
             this.agendaText.AutoSize = true;
             this.agendaText.Font = new System.Drawing.Font("Tw Cen MT", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.agendaText.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.agendaText.Location = new System.Drawing.Point(464, 6);
+            this.agendaText.Location = new System.Drawing.Point(624, 16);
             this.agendaText.Name = "agendaText";
             this.agendaText.Size = new System.Drawing.Size(116, 39);
             this.agendaText.TabIndex = 7;
@@ -97,11 +96,11 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.label1);
+            this.splitContainer1.Panel1Collapsed = true;
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.agendaText);
-            this.splitContainer1.Panel2.Controls.Add(this.splitter1);
             this.splitContainer1.Panel2.Controls.Add(this.yearRadio);
             this.splitContainer1.Panel2.Controls.Add(this.monthRadio);
             this.splitContainer1.Panel2.Controls.Add(this.weekRadio);
@@ -127,21 +126,10 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Nav will go here";
             // 
-            // splitter1
-            // 
-            this.splitter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.splitter1.Cursor = System.Windows.Forms.Cursors.SizeAll;
-            this.splitter1.Location = new System.Drawing.Point(0, 0);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.splitter1.Size = new System.Drawing.Size(14, 442);
-            this.splitter1.TabIndex = 24;
-            this.splitter1.TabStop = false;
-            // 
             // yearRadio
             // 
             this.yearRadio.AutoSize = true;
-            this.yearRadio.Location = new System.Drawing.Point(459, 91);
+            this.yearRadio.Location = new System.Drawing.Point(600, 91);
             this.yearRadio.Name = "yearRadio";
             this.yearRadio.Size = new System.Drawing.Size(57, 20);
             this.yearRadio.TabIndex = 23;
@@ -152,7 +140,7 @@
             // monthRadio
             // 
             this.monthRadio.AutoSize = true;
-            this.monthRadio.Location = new System.Drawing.Point(317, 91);
+            this.monthRadio.Location = new System.Drawing.Point(435, 91);
             this.monthRadio.Name = "monthRadio";
             this.monthRadio.Size = new System.Drawing.Size(64, 20);
             this.monthRadio.TabIndex = 22;
@@ -163,7 +151,7 @@
             // weekRadio
             // 
             this.weekRadio.AutoSize = true;
-            this.weekRadio.Location = new System.Drawing.Point(184, 91);
+            this.weekRadio.Location = new System.Drawing.Point(274, 91);
             this.weekRadio.Name = "weekRadio";
             this.weekRadio.Size = new System.Drawing.Size(64, 20);
             this.weekRadio.TabIndex = 21;
@@ -174,7 +162,7 @@
             // dayRadio
             // 
             this.dayRadio.AutoSize = true;
-            this.dayRadio.Location = new System.Drawing.Point(75, 91);
+            this.dayRadio.Location = new System.Drawing.Point(132, 91);
             this.dayRadio.Name = "dayRadio";
             this.dayRadio.Size = new System.Drawing.Size(53, 20);
             this.dayRadio.TabIndex = 20;
@@ -185,7 +173,7 @@
             // addEventButton
             // 
             this.addEventButton.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addEventButton.Location = new System.Drawing.Point(416, 192);
+            this.addEventButton.Location = new System.Drawing.Point(588, 178);
             this.addEventButton.Name = "addEventButton";
             this.addEventButton.Size = new System.Drawing.Size(66, 29);
             this.addEventButton.TabIndex = 18;
@@ -195,16 +183,16 @@
             // addEventText
             // 
             this.addEventText.AutoSize = true;
-            this.addEventText.Location = new System.Drawing.Point(224, 154);
+            this.addEventText.Location = new System.Drawing.Point(446, 150);
             this.addEventText.Name = "addEventText";
-            this.addEventText.Size = new System.Drawing.Size(211, 16);
+            this.addEventText.Size = new System.Drawing.Size(105, 16);
             this.addEventText.TabIndex = 19;
-            this.addEventText.Text = "Select Day, Then Add Event Here:";
+            this.addEventText.Text = "Add Event Here:";
             // 
             // addEventBox
             // 
             this.addEventBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.addEventBox.Location = new System.Drawing.Point(459, 151);
+            this.addEventBox.Location = new System.Drawing.Point(571, 147);
             this.addEventBox.Name = "addEventBox";
             this.addEventBox.Size = new System.Drawing.Size(100, 22);
             this.addEventBox.TabIndex = 18;
@@ -217,7 +205,7 @@
             this.eventListBox.Controls.Add(this.event1);
             this.eventListBox.Controls.Add(this.eventsText);
             this.eventListBox.Controls.Add(this.viewAllEvents);
-            this.eventListBox.Location = new System.Drawing.Point(350, 233);
+            this.eventListBox.Location = new System.Drawing.Point(505, 231);
             this.eventListBox.Name = "eventListBox";
             this.eventListBox.Size = new System.Drawing.Size(212, 204);
             this.eventListBox.TabIndex = 18;
@@ -254,11 +242,11 @@
             this.eventsText.AutoSize = true;
             this.eventsText.Font = new System.Drawing.Font("Tw Cen MT Condensed", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eventsText.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.eventsText.Location = new System.Drawing.Point(38, 14);
+            this.eventsText.Location = new System.Drawing.Point(38, 16);
             this.eventsText.Name = "eventsText";
-            this.eventsText.Size = new System.Drawing.Size(127, 26);
+            this.eventsText.Size = new System.Drawing.Size(105, 26);
             this.eventsText.TabIndex = 16;
-            this.eventsText.Text = "Events For Today:";
+            this.eventsText.Text = "Events Added:";
             // 
             // viewAllEvents
             // 
@@ -273,7 +261,7 @@
             // 
             // decreaseArrow
             // 
-            this.decreaseArrow.Location = new System.Drawing.Point(53, 198);
+            this.decreaseArrow.Location = new System.Drawing.Point(149, 193);
             this.decreaseArrow.Name = "decreaseArrow";
             this.decreaseArrow.Size = new System.Drawing.Size(75, 23);
             this.decreaseArrow.TabIndex = 15;
@@ -282,7 +270,7 @@
             // 
             // increaseArrow
             // 
-            this.increaseArrow.Location = new System.Drawing.Point(213, 198);
+            this.increaseArrow.Location = new System.Drawing.Point(309, 193);
             this.increaseArrow.Name = "increaseArrow";
             this.increaseArrow.Size = new System.Drawing.Size(75, 23);
             this.increaseArrow.TabIndex = 14;
@@ -331,7 +319,6 @@
         private System.Windows.Forms.RadioButton monthRadio;
         private System.Windows.Forms.RadioButton weekRadio;
         private System.Windows.Forms.RadioButton dayRadio;
-        private System.Windows.Forms.Splitter splitter1;
     }
 }
 

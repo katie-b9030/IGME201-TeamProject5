@@ -10,9 +10,11 @@ using System.Windows.Forms;
 
 namespace wrkFloMealPlanner
 {
+    //This form is made to add an item to the shopping list
     public partial class Form2 : Form
     {
         private CheckedListBox shoppingList;
+        //Constructor, takes a reference to a CheckedListBox (the shopping list)
         public Form2(ref CheckedListBox shoppingList)
         {
             InitializeComponent();
@@ -23,7 +25,7 @@ namespace wrkFloMealPlanner
             cancelButton.Click += new EventHandler(CancelButton__Click);
 
         }
-
+        //Closes the form and adds the new item to the shopping list on main form
         private void EnterButton__Click(object sender, EventArgs e)
         {
             shoppingList.Items.Add(newItemTextBox.Text);
@@ -31,7 +33,7 @@ namespace wrkFloMealPlanner
             this.Close();
             
         }
-
+        //Closes the form
         private void CancelButton__Click(object sender, EventArgs e)
         {
             this.cancelButton.DialogResult = DialogResult.Cancel;

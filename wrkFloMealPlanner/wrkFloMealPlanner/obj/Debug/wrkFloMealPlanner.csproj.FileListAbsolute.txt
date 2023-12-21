@@ -11,3 +11,4 @@ C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\
 C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloMealPlanner\wrkFloMealPlanner\obj\Debug\wrkFloMealPlanner.pdb
 C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloMealPlanner\wrkFloMealPlanner\obj\Debug\wrkFloMealPlanner.Form3.resources
 C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloMealPlanner\wrkFloMealPlanner\obj\Debug\wrkFloMealPlanner.Form4.resources
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\wrkFloMealPlanner\wrkFloMealPlanner\obj\Debug\wrkFloMealPlanner.AddRecipeForm.resources

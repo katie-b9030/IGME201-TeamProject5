@@ -51,7 +51,9 @@
             this.newItemButton = new System.Windows.Forms.Button();
             this.shoppingListLabel = new System.Windows.Forms.Label();
             this.shoppingListCheckedListBox = new System.Windows.Forms.CheckedListBox();
+            this.navLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
+            this.splitContainer.Panel1.SuspendLayout();
             this.splitContainer.Panel2.SuspendLayout();
             this.splitContainer.SuspendLayout();
             this.dinnerGroupBox.SuspendLayout();
@@ -94,6 +96,10 @@
             this.splitContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.splitContainer.Location = new System.Drawing.Point(-1, 1);
             this.splitContainer.Name = "splitContainer";
+            // 
+            // splitContainer.Panel1
+            // 
+            this.splitContainer.Panel1.Controls.Add(this.navLabel);
             // 
             // splitContainer.Panel2
             // 
@@ -342,6 +348,15 @@
             this.shoppingListCheckedListBox.Size = new System.Drawing.Size(280, 140);
             this.shoppingListCheckedListBox.TabIndex = 0;
             // 
+            // navLabel
+            // 
+            this.navLabel.AutoSize = true;
+            this.navLabel.Location = new System.Drawing.Point(74, 262);
+            this.navLabel.Name = "navLabel";
+            this.navLabel.Size = new System.Drawing.Size(96, 16);
+            this.navLabel.TabIndex = 0;
+            this.navLabel.Text = "Nav goes here";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -351,6 +366,8 @@
             this.IsMdiContainer = true;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.splitContainer.Panel1.ResumeLayout(false);
+            this.splitContainer.Panel1.PerformLayout();
             this.splitContainer.Panel2.ResumeLayout(false);
             this.splitContainer.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).EndInit();
@@ -392,6 +409,7 @@
         private System.Windows.Forms.Label breakfastLabel;
         private System.Windows.Forms.Button enterDateButton;
         private System.Windows.Forms.Label dateLabel;
+        private System.Windows.Forms.Label navLabel;
     }
 }
 

@@ -16,7 +16,7 @@ namespace wrkFloMealPlanner
 		private Label label;
 		private MealType mealType;
         private Button button;
-
+		//This form is created to take information to add a meal to the meal planner.
         public Form4(MealPlan mealPlan, ref Label label, MealType mealType)
 		{
 			InitializeComponent();
@@ -30,8 +30,8 @@ namespace wrkFloMealPlanner
 			cancelButton.Click += new EventHandler(CancelButton__Click);
 
 		}
-
-		private void EnterButton__Click(object sender, EventArgs e)
+        //Closes the form and updates the meal and url into the planner
+        private void EnterButton__Click(object sender, EventArgs e)
 		{
 			
 			mealPlan.AddMeal(mealType, nameTextBox.Text, urlTextBox.Text);
@@ -40,8 +40,8 @@ namespace wrkFloMealPlanner
 			this.Close();
 
 		}
-
-		private void CancelButton__Click(object sender, EventArgs e)
+        //Closes the form
+        private void CancelButton__Click(object sender, EventArgs e)
 		{
 			this.cancelButton.DialogResult = DialogResult.Cancel;
 		}

@@ -51,9 +51,8 @@
             this.newItemButton = new System.Windows.Forms.Button();
             this.shoppingListLabel = new System.Windows.Forms.Label();
             this.shoppingListCheckedListBox = new System.Windows.Forms.CheckedListBox();
-            this.navLabel = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
-            this.splitContainer.Panel1.SuspendLayout();
             this.splitContainer.Panel2.SuspendLayout();
             this.splitContainer.SuspendLayout();
             this.dinnerGroupBox.SuspendLayout();
@@ -70,10 +69,10 @@
             this.plannerLabel.BackColor = System.Drawing.Color.Transparent;
             this.plannerLabel.Font = new System.Drawing.Font("Monotype Corsiva", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.plannerLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(223)))), ((int)(((byte)(248)))));
-            this.plannerLabel.Location = new System.Drawing.Point(642, 20);
+            this.plannerLabel.Location = new System.Drawing.Point(642, 0);
             this.plannerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.plannerLabel.Name = "plannerLabel";
-            this.plannerLabel.Size = new System.Drawing.Size(150, 56);
+            this.plannerLabel.Size = new System.Drawing.Size(179, 67);
             this.plannerLabel.TabIndex = 17;
             this.plannerLabel.Text = "planner";
             // 
@@ -83,10 +82,10 @@
             this.mealLabel.BackColor = System.Drawing.Color.Transparent;
             this.mealLabel.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mealLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.mealLabel.Location = new System.Drawing.Point(536, 21);
+            this.mealLabel.Location = new System.Drawing.Point(520, 1);
             this.mealLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mealLabel.Name = "mealLabel";
-            this.mealLabel.Size = new System.Drawing.Size(111, 55);
+            this.mealLabel.Size = new System.Drawing.Size(131, 65);
             this.mealLabel.TabIndex = 15;
             this.mealLabel.Text = "meal";
             this.mealLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -96,13 +95,11 @@
             this.splitContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.splitContainer.Location = new System.Drawing.Point(-1, 1);
             this.splitContainer.Name = "splitContainer";
-            // 
-            // splitContainer.Panel1
-            // 
-            this.splitContainer.Panel1.Controls.Add(this.navLabel);
+            this.splitContainer.Panel1Collapsed = true;
             // 
             // splitContainer.Panel2
             // 
+            this.splitContainer.Panel2.Controls.Add(this.panel1);
             this.splitContainer.Panel2.Controls.Add(this.dateLabel);
             this.splitContainer.Panel2.Controls.Add(this.enterDateButton);
             this.splitContainer.Panel2.Controls.Add(this.dinnerButton);
@@ -116,7 +113,7 @@
             this.splitContainer.Panel2.Controls.Add(this.shoppingListPanel);
             this.splitContainer.Panel2.Controls.Add(this.mealLabel);
             this.splitContainer.Panel2.Controls.Add(this.plannerLabel);
-            this.splitContainer.Size = new System.Drawing.Size(1066, 564);
+            this.splitContainer.Size = new System.Drawing.Size(831, 562);
             this.splitContainer.SplitterDistance = 244;
             this.splitContainer.TabIndex = 30;
             // 
@@ -126,10 +123,10 @@
             this.dateLabel.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.dateLabel.Location = new System.Drawing.Point(329, 136);
+            this.dateLabel.Location = new System.Drawing.Point(329, 127);
             this.dateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(125, 33);
+            this.dateLabel.Size = new System.Drawing.Size(143, 39);
             this.dateLabel.TabIndex = 32;
             this.dateLabel.Text = "1/1/2000";
             this.dateLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -137,7 +134,7 @@
             // enterDateButton
             // 
             this.enterDateButton.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Bold);
-            this.enterDateButton.Location = new System.Drawing.Point(672, 105);
+            this.enterDateButton.Location = new System.Drawing.Point(672, 96);
             this.enterDateButton.Name = "enterDateButton";
             this.enterDateButton.Size = new System.Drawing.Size(132, 24);
             this.enterDateButton.TabIndex = 31;
@@ -147,7 +144,7 @@
             // dinnerButton
             // 
             this.dinnerButton.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20F);
-            this.dinnerButton.Location = new System.Drawing.Point(754, 443);
+            this.dinnerButton.Location = new System.Drawing.Point(754, 434);
             this.dinnerButton.Name = "dinnerButton";
             this.dinnerButton.Size = new System.Drawing.Size(50, 99);
             this.dinnerButton.TabIndex = 30;
@@ -157,7 +154,7 @@
             // lunchButton
             // 
             this.lunchButton.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20F);
-            this.lunchButton.Location = new System.Drawing.Point(754, 312);
+            this.lunchButton.Location = new System.Drawing.Point(754, 303);
             this.lunchButton.Name = "lunchButton";
             this.lunchButton.Size = new System.Drawing.Size(50, 99);
             this.lunchButton.TabIndex = 29;
@@ -167,7 +164,7 @@
             // breakfastButton
             // 
             this.breakfastButton.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20F);
-            this.breakfastButton.Location = new System.Drawing.Point(754, 184);
+            this.breakfastButton.Location = new System.Drawing.Point(754, 175);
             this.breakfastButton.Name = "breakfastButton";
             this.breakfastButton.Size = new System.Drawing.Size(50, 99);
             this.breakfastButton.TabIndex = 28;
@@ -178,7 +175,7 @@
             // 
             this.dinnerGroupBox.Controls.Add(this.dinnerLabel);
             this.dinnerGroupBox.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic);
-            this.dinnerGroupBox.Location = new System.Drawing.Point(326, 431);
+            this.dinnerGroupBox.Location = new System.Drawing.Point(326, 422);
             this.dinnerGroupBox.Name = "dinnerGroupBox";
             this.dinnerGroupBox.Size = new System.Drawing.Size(421, 109);
             this.dinnerGroupBox.TabIndex = 27;
@@ -191,7 +188,7 @@
             this.dinnerLabel.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dinnerLabel.Location = new System.Drawing.Point(16, 37);
             this.dinnerLabel.Name = "dinnerLabel";
-            this.dinnerLabel.Size = new System.Drawing.Size(52, 23);
+            this.dinnerLabel.Size = new System.Drawing.Size(63, 28);
             this.dinnerLabel.TabIndex = 1;
             this.dinnerLabel.Text = "None";
             // 
@@ -199,7 +196,7 @@
             // 
             this.lunchGroupBox.Controls.Add(this.lunchLabel);
             this.lunchGroupBox.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic);
-            this.lunchGroupBox.Location = new System.Drawing.Point(326, 300);
+            this.lunchGroupBox.Location = new System.Drawing.Point(326, 291);
             this.lunchGroupBox.Name = "lunchGroupBox";
             this.lunchGroupBox.Size = new System.Drawing.Size(421, 109);
             this.lunchGroupBox.TabIndex = 27;
@@ -212,7 +209,7 @@
             this.lunchLabel.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lunchLabel.Location = new System.Drawing.Point(16, 37);
             this.lunchLabel.Name = "lunchLabel";
-            this.lunchLabel.Size = new System.Drawing.Size(52, 23);
+            this.lunchLabel.Size = new System.Drawing.Size(63, 28);
             this.lunchLabel.TabIndex = 1;
             this.lunchLabel.Text = "None";
             // 
@@ -220,7 +217,7 @@
             // 
             this.breakfastGroupBox.Controls.Add(this.breakfastLabel);
             this.breakfastGroupBox.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic);
-            this.breakfastGroupBox.Location = new System.Drawing.Point(326, 172);
+            this.breakfastGroupBox.Location = new System.Drawing.Point(326, 163);
             this.breakfastGroupBox.Name = "breakfastGroupBox";
             this.breakfastGroupBox.Size = new System.Drawing.Size(421, 109);
             this.breakfastGroupBox.TabIndex = 26;
@@ -233,7 +230,7 @@
             this.breakfastLabel.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.breakfastLabel.Location = new System.Drawing.Point(16, 37);
             this.breakfastLabel.Name = "breakfastLabel";
-            this.breakfastLabel.Size = new System.Drawing.Size(52, 23);
+            this.breakfastLabel.Size = new System.Drawing.Size(63, 28);
             this.breakfastLabel.TabIndex = 0;
             this.breakfastLabel.Text = "None";
             // 
@@ -241,9 +238,9 @@
             // 
             this.dateTimePicker.Font = new System.Drawing.Font("Tw Cen MT", 8.25F);
             this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker.Location = new System.Drawing.Point(326, 105);
+            this.dateTimePicker.Location = new System.Drawing.Point(326, 96);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(321, 22);
+            this.dateTimePicker.Size = new System.Drawing.Size(321, 25);
             this.dateTimePicker.TabIndex = 25;
             this.dateTimePicker.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             // 
@@ -343,31 +340,28 @@
             "Eggs",
             "Sour Cream",
             "Flour"});
-            this.shoppingListCheckedListBox.Location = new System.Drawing.Point(0, 44);
+            this.shoppingListCheckedListBox.Location = new System.Drawing.Point(0, 54);
             this.shoppingListCheckedListBox.Name = "shoppingListCheckedListBox";
-            this.shoppingListCheckedListBox.Size = new System.Drawing.Size(280, 140);
+            this.shoppingListCheckedListBox.Size = new System.Drawing.Size(280, 130);
             this.shoppingListCheckedListBox.TabIndex = 0;
             // 
-            // navLabel
+            // panel1
             // 
-            this.navLabel.AutoSize = true;
-            this.navLabel.Location = new System.Drawing.Point(74, 262);
-            this.navLabel.Name = "navLabel";
-            this.navLabel.Size = new System.Drawing.Size(96, 16);
-            this.navLabel.TabIndex = 0;
-            this.navLabel.Text = "Nav goes here";
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(223)))), ((int)(((byte)(248)))));
+            this.panel1.Location = new System.Drawing.Point(-1, 70);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(831, 10);
+            this.panel1.TabIndex = 33;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 559);
+            this.ClientSize = new System.Drawing.Size(829, 559);
             this.Controls.Add(this.splitContainer);
             this.IsMdiContainer = true;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.splitContainer.Panel1.ResumeLayout(false);
-            this.splitContainer.Panel1.PerformLayout();
             this.splitContainer.Panel2.ResumeLayout(false);
             this.splitContainer.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).EndInit();
@@ -409,7 +403,7 @@
         private System.Windows.Forms.Label breakfastLabel;
         private System.Windows.Forms.Button enterDateButton;
         private System.Windows.Forms.Label dateLabel;
-        private System.Windows.Forms.Label navLabel;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

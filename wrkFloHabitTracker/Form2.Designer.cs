@@ -30,7 +30,7 @@
         {
             this.cancelButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.habitTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -52,13 +52,13 @@
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // habitTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(240, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(127, 22);
-            this.textBox1.TabIndex = 5;
+            this.habitTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.habitTextBox.Location = new System.Drawing.Point(240, 37);
+            this.habitTextBox.Name = "habitTextBox";
+            this.habitTextBox.Size = new System.Drawing.Size(127, 22);
+            this.habitTextBox.TabIndex = 5;
             // 
             // label1
             // 
@@ -72,15 +72,16 @@
             // 
             // HabitForm
             // 
+            this.AcceptButton = this.addButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 143);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.addButton);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.habitTextBox);
             this.Controls.Add(this.label1);
             this.Name = "HabitForm";
-            this.Text = "Form2";
+            this.Text = "Add Habit";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -90,7 +91,7 @@
 
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Button addButton;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox habitTextBox;
         private System.Windows.Forms.Label label1;
     }
 }

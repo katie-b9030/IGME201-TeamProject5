@@ -9,3 +9,25 @@ C:\Users\kathe\source\repos\katie-b9030\IGME201-TeamProject5\wrkFloFinanceTracke
 C:\Users\kathe\source\repos\katie-b9030\IGME201-TeamProject5\wrkFloFinanceTracker\obj\Debug\wrkFlo.csproj.CoreCompileInputs.cache
 C:\Users\kathe\source\repos\katie-b9030\IGME201-TeamProject5\wrkFloFinanceTracker\obj\Debug\wrkFloFinanceTracker.exe
 C:\Users\kathe\source\repos\katie-b9030\IGME201-TeamProject5\wrkFloFinanceTracker\obj\Debug\wrkFloFinanceTracker.pdb
+C:\Users\kathe\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\bin\Debug\wrkFloFinanceTracker.exe.config
+C:\Users\kathe\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\bin\Debug\wrkFloFinanceTracker.exe
+C:\Users\kathe\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\bin\Debug\wrkFloFinanceTracker.pdb
+C:\Users\kathe\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\obj\Debug\wrkFlo.csproj.AssemblyReference.cache
+C:\Users\kathe\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\obj\Debug\wrkFloFinanceTracker.FinanceTracker.resources
+C:\Users\kathe\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\obj\Debug\wrkFloFinanceTracker.Options.resources
+C:\Users\kathe\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\obj\Debug\wrkFloFinanceTracker.Properties.Resources.resources
+C:\Users\kathe\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\obj\Debug\wrkFlo.csproj.GenerateResource.cache
+C:\Users\kathe\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\obj\Debug\wrkFlo.csproj.CoreCompileInputs.cache
+C:\Users\kathe\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\obj\Debug\wrkFloFinanceTracker.exe
+C:\Users\kathe\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\obj\Debug\wrkFloFinanceTracker.pdb
+C:\Users\New PC\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\bin\Debug\wrkFloFinanceTracker.exe.config
+C:\Users\New PC\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\bin\Debug\wrkFloFinanceTracker.exe
+C:\Users\New PC\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\bin\Debug\wrkFloFinanceTracker.pdb
+C:\Users\New PC\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\obj\Debug\wrkFlo.csproj.AssemblyReference.cache
+C:\Users\New PC\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\obj\Debug\wrkFloFinanceTracker.FinanceTracker.resources
+C:\Users\New PC\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\obj\Debug\wrkFloFinanceTracker.Options.resources
+C:\Users\New PC\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\obj\Debug\wrkFloFinanceTracker.Properties.Resources.resources
+C:\Users\New PC\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\obj\Debug\wrkFlo.csproj.GenerateResource.cache
+C:\Users\New PC\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\obj\Debug\wrkFlo.csproj.CoreCompileInputs.cache
+C:\Users\New PC\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\obj\Debug\wrkFloFinanceTracker.exe
+C:\Users\New PC\source\repos\IGME201-TeamProject5\wrkFloFinanceTracker\obj\Debug\wrkFloFinanceTracker.pdb

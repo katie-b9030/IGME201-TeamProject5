@@ -8,3 +8,13 @@ C:\Users\15086\Desktop\myIGME-201\WrkFlo\obj\Debug\WrkFlo.csproj.GenerateResourc
 C:\Users\15086\Desktop\myIGME-201\WrkFlo\obj\Debug\WrkFlo.csproj.CoreCompileInputs.cache
 C:\Users\15086\Desktop\myIGME-201\WrkFlo\obj\Debug\WrkFlo.exe
 C:\Users\15086\Desktop\myIGME-201\WrkFlo\obj\Debug\WrkFlo.pdb
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\WrkFloAGENDA\bin\Debug\WrkFlo.exe.config
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\WrkFloAGENDA\bin\Debug\WrkFlo.exe
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\WrkFloAGENDA\bin\Debug\WrkFlo.pdb
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\WrkFloAGENDA\obj\Debug\WrkFlo.csproj.AssemblyReference.cache
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\WrkFloAGENDA\obj\Debug\WrkFloAGENDA.Form1.resources
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\WrkFloAGENDA\obj\Debug\WrkFlo.Properties.Resources.resources
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\WrkFloAGENDA\obj\Debug\WrkFlo.csproj.GenerateResource.cache
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\WrkFloAGENDA\obj\Debug\WrkFlo.csproj.CoreCompileInputs.cache
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\WrkFloAGENDA\obj\Debug\WrkFlo.exe
+C:\Users\cooki\OneDrive\Documents\RIT\Fall Semester 2023\IGME 201\Team 5\GitHub\WrkFloAGENDA\obj\Debug\WrkFlo.pdb

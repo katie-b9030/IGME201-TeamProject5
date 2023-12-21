@@ -110,11 +110,12 @@
             // navSplitContainer.Panel1
             // 
             this.navSplitContainer.Panel1.BackColor = System.Drawing.Color.White;
+            this.navSplitContainer.Panel1Collapsed = true;
             // 
             // navSplitContainer.Panel2
             // 
             this.navSplitContainer.Panel2.Controls.Add(this.habitSplitContainer);
-            this.navSplitContainer.Size = new System.Drawing.Size(800, 450);
+            this.navSplitContainer.Size = new System.Drawing.Size(590, 450);
             this.navSplitContainer.SplitterDistance = 211;
             this.navSplitContainer.SplitterWidth = 10;
             this.navSplitContainer.TabIndex = 0;
@@ -151,7 +152,7 @@
             this.habitSplitContainer.Panel2.Controls.Add(this.mondayLabel);
             this.habitSplitContainer.Panel2.Controls.Add(this.sundayLabel);
             this.habitSplitContainer.Panel2.Controls.Add(this.addButton);
-            this.habitSplitContainer.Size = new System.Drawing.Size(579, 450);
+            this.habitSplitContainer.Size = new System.Drawing.Size(590, 450);
             this.habitSplitContainer.SplitterDistance = 62;
             this.habitSplitContainer.SplitterWidth = 10;
             this.habitSplitContainer.TabIndex = 0;
@@ -160,11 +161,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(223)))), ((int)(((byte)(248)))));
-            this.label2.Location = new System.Drawing.Point(97, 9);
+            this.label2.Location = new System.Drawing.Point(458, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 42);
+            this.label2.Size = new System.Drawing.Size(112, 45);
             this.label2.TabIndex = 2;
             this.label2.Text = "tracker";
             // 
@@ -172,11 +173,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Ebrima", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Tw Cen MT", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.label1.Location = new System.Drawing.Point(1, 4);
+            this.label1.Location = new System.Drawing.Point(365, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 50);
+            this.label1.Size = new System.Drawing.Size(99, 43);
             this.label1.TabIndex = 1;
             this.label1.Text = "habit";
             // 
@@ -881,7 +882,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(590, 450);
             this.Controls.Add(this.navSplitContainer);
             this.Name = "Form1";
             this.Text = "Habit Tracker";

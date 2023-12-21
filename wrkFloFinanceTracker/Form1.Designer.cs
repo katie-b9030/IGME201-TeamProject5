@@ -66,11 +66,12 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.White;
+            this.splitContainer1.Panel1Collapsed = true;
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(796, 446);
+            this.splitContainer1.Size = new System.Drawing.Size(577, 446);
             this.splitContainer1.SplitterDistance = 218;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -106,7 +107,7 @@
             this.splitContainer2.Panel2.Controls.Add(this.label3);
             this.splitContainer2.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.splitContainer2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.splitContainer2.Size = new System.Drawing.Size(574, 446);
+            this.splitContainer2.Size = new System.Drawing.Size(577, 446);
             this.splitContainer2.SplitterDistance = 56;
             this.splitContainer2.SplitterWidth = 10;
             this.splitContainer2.TabIndex = 0;
@@ -140,7 +141,7 @@
             this.removeButton.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.removeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.removeButton.Location = new System.Drawing.Point(283, 341);
-            this.removeButton.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.removeButton.Margin = new System.Windows.Forms.Padding(1);
             this.removeButton.Name = "removeButton";
             this.removeButton.Size = new System.Drawing.Size(281, 30);
             this.removeButton.TabIndex = 14;
@@ -152,7 +153,7 @@
             this.addButton.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.addButton.Location = new System.Drawing.Point(11, 341);
-            this.addButton.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.addButton.Margin = new System.Windows.Forms.Padding(1);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(272, 30);
             this.addButton.TabIndex = 13;
@@ -301,7 +302,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(796, 446);
+            this.ClientSize = new System.Drawing.Size(577, 446);
             this.Controls.Add(this.splitContainer1);
             this.Name = "FinanceTracker";
             this.Text = "Finance Tracker";
